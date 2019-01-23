@@ -1,0 +1,11 @@
+#
+# Configure Kie-server System properties.
+#
+
+/system-property=org.kie.server.controller.user:add(value="dsUser")
+/system-property=org.kie.server.controller.pwd:add(value="dsUser1!")
+/system-property=org.kie.server.location:add(value="http://localhost:8080/kie-server/services/rest/server")
+
+/system-property=org.kie.server.controller:add(value="ws://localhost:8080/decision-central/websocket/controller")
+
+/system-property=org.kie.server.id:add(value="local-ds-cluster")

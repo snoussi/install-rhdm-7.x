@@ -1,13 +1,13 @@
 #!/bin/sh
 
-PRODUCT="Red Hat Decision Manager 7.0 on EAP7.1"
+PRODUCT="Red Hat Decision Manager 7.2 on EAP7.2"
 
-RHDM_DC=rhdm-7.0.0.GA-decision-central-eap7-deployable
-RHDM_DS=rhdm-7.0.0.GA-kie-server-ee7
+RHDM_DC=rhdm-7.2.0-decision-central-eap7-deployable
+RHDM_DS=rhdm-7.2.0-kie-server-ee7
 #RHDM_PATCH_WILDCARD=
 
-EAP=jboss-eap-7.1.0
-#EAP_PATCH=
+EAP=jboss-eap-7.2.0
+#EAP_PATCH=jboss-eap-7.1.4-patch
 
 EAP_USER=admin
 EAP_PWD=jboss1!
@@ -18,8 +18,8 @@ RHDM_PWD=dmAdmin1!
 TARGET=../
 SRC_DIR=./installs
 
-JBOSS_HOME=$TARGET/jboss-eap-7.1
-RHDM_HOME=$TARGET/rhdm-7.0
+JBOSS_HOME=$TARGET/jboss-eap-7.2
+RHDM_HOME=$TARGET/rhdm-7.2
 
 echo
 echo "##############################################################"
@@ -174,7 +174,7 @@ touch $JBOSS_HOME/standalone/deployments/kie-server.war.dodeploy
 echo
 echo "Creating initial users ..."
 echo
-$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u $RHDM_USER -p $RHDM_PWD -ro admin,analyst,user,kie-server,rest-all,manager,kiemgmt --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u $RHDM_USER -p $RHDM_PWD -ro admin,analyst,kie-server,rest-all --silent
 if [ $? -ne 0 ]; then
   echo
   echo "Error occurred during JBoss EAP installation!"

@@ -1,0 +1,22 @@
+#
+# Configure RHDM System properties.
+#
+
+#
+# For Decision Central only
+#
+/system-property=org.uberfire.nio.git.dir:add(value="./dm-data/git-dir")
+/system-property=org.uberfire.nio.git.daemon.host:add(value="0.0.0.0")
+/system-property=org.uberfire.nio.git.ssh.host:add(value="0.0.0.0")
+/system-property=org.uberfire.metadata.index.dir:add(value="./dm-data")
+/system-property=org.kie.override.deploy.enabled:add(value="true")
+/system-property=org.kie.server.repo:add(value="./dm-data")
+/system-property=org.guvnor.m2repo.dir:add(value="./dm-data/m2repo")
+
+#
+# For both Decision Central and Decision Server
+# By default the products search for setting.xml on ~/.m2 folder.
+# You can change the default folder using system properties to point to a custom location settings.xml file
+# TODO: Change path to the custom location of settings.xml file
+#
+#/system-property=kie.maven.settings.custom:add(value="/home/USERX/.m2/settings.xml")
