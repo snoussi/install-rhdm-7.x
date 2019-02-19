@@ -5,7 +5,7 @@ echo "Start Server first by running this command: ./standalone.sh -c standalone-
 
 TARGET=../
 #TODO: Edit EAP version
-JBOSS_HOME=$TARGET/rhdm-7.2
+JBOSS_HOME=$TARGET/rhdm-7.2.1
 CLI_SCRIPT=add-system-properties.cli
 
 mkdir $JBOSS_HOME/dm-data
