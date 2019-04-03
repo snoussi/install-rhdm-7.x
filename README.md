@@ -1,4 +1,4 @@
-# RHDM-7.2 Sandbox Installation
+# RHDM-7.3 Sandbox Installation
 
 ## Installation packages  
 
@@ -12,7 +12,7 @@ $ ./install.sh
 ## Configure RHDM
 * Start EAP Server in admin mode
 ```
-$ cd ../rhdm-7.2/bin
+$ cd ../rhdm-7.3/bin
 $ ./standalone.sh -c standalone-full.xml --admin-only
 ```
 
@@ -30,6 +30,6 @@ $ ./add-kie-server-system-properties.sh
 
 ## Start RHDM
 ```
-$ cd ../rhdm-7.2
+$ cd ../rhdm-7.3
 $ ./bin/standalone.sh -c standalone-full.xml
 ```

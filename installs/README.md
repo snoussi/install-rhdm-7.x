@@ -7,7 +7,7 @@ Below the list of installation packages to download from the [Red Hat Customer P
 (jboss-eap-7.2.0.zip)
 
 ## RHDM 7.2 packages
-* Red Hat Decision Manager 7.2.1 Decision Central Deployable for EAP 7 
-(rhdm-7.2.1-decision-central-eap7-deployable.zip)
+* Red Hat Decision Manager 7.3.0 Decision Central Deployable for EAP 7 
+(rhdm-7.3.0-decision-central-eap7-deployable.zip)
 * Red Hat Decision Manager 7.2.1 Decision Server for All Supported EE7 Containers 
-(rhdm-7.2.1-kie-server-ee7.zip)
+(rhdm-7.3.0-kie-server-ee8.zip)
