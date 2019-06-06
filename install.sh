@@ -1,9 +1,9 @@
 #!/bin/sh
 
-PRODUCT="Red Hat Decision Manager 7.3.0 on EAP7.2"
+PRODUCT="Red Hat Decision Manager 7.3.1 on EAP7.2"
 
-RHDM_DC=rhdm-7.3.0-decision-central-eap7-deployable
-RHDM_DS=rhdm-7.3.0-kie-server-ee8
+RHDM_DC=rhdm-7.3.1-decision-central-eap7-deployable
+RHDM_DS=rhdm-7.3.1-kie-server-ee8
 #RHDM_PATCH_WILDCARD=
 
 EAP=jboss-eap-7.2.0
@@ -19,7 +19,7 @@ TARGET=../
 SRC_DIR=./installs
 
 JBOSS_HOME=$TARGET/jboss-eap-7.2
-RHDM_HOME=$TARGET/rhdm-7.3.0
+RHDM_HOME=$TARGET/rhdm-7.3
 
 echo
 echo "##############################################################"
@@ -186,3 +186,5 @@ echo "Renaming folders ..."
 echo
 mv $JBOSS_HOME $RHDM_HOME
 cp reset-dc.sh $RHDM_HOME
+
+echo "Now, start server in administration mode by running this command: ./standalone.sh -c standalone-full.xml --admin-only"
