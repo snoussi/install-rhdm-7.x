@@ -4,7 +4,7 @@ AUTHORS1="Rachid Snoussi"
 echo "Start Server first by running this command: ./standalone.sh -c standalone-full.xml --admin-only"
 
 TARGET=../
-JBOSS_HOME=$TARGET/rhdm-7.3
+JBOSS_HOME=$TARGET/rhdm-7.4
 CLI_SCRIPT=add-kie-server-system-properties.cli
 
 echo "Adding a kieserverUser user on JBoss EAP ..."
