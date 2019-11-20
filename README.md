@@ -1,35 +1,41 @@
-# RHDM-7.4 Sandbox Installation
+# RHDM-7.5 Sandbox Installation
 
-## Installation packages  
+## Installation packages
 
-* Download and copy [installation packages] (installs/README.md) to ./installs folder 
+- Download and copy [installation packages](installs/README.md) to ./installs folder
 
-## Run RHDM installation script  
+## Run RHDM installation script
+
 ```
 $ ./install.sh
 ```
 
 ## Configure RHDM
-* Start EAP Server in admin mode
+
+- Start EAP Server in admin mode
+
 ```
-$ cd ../rhdm-7.4/bin
+$ cd ../rhdm-7.5/bin
 $ ./standalone.sh -c standalone-full.xml --admin-only
 ```
 
-* In another terminal, run the system properties configuration script
+- In another terminal, run the system properties configuration script
+
 ```
 $ ./add-system-properties.sh
 ```
 
-* Then, run the kie server configuration script
+- Then, run the kie server configuration script
+
 ```
 $ ./add-kie-server-system-properties.sh
 ```
 
-* Stop EAP Server (admin mode) 
+- Stop EAP Server (admin mode)
 
 ## Start RHDM
+
 ```
-$ cd ../rhdm-7.4
+$ cd ../rhdm-7.5
 $ ./bin/standalone.sh -c standalone-full.xml
 ```
