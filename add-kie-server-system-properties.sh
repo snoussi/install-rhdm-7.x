@@ -7,9 +7,9 @@ TARGET=../
 JBOSS_HOME=$TARGET/rhdm-7.5
 CLI_SCRIPT=add-kie-server-system-properties.cli
 
-echo "Adding a kieserverUser user on JBoss EAP ..."
+echo "Adding a dmController user on JBoss EAP ..."
 echo
-$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u dsUser -p dsUser1! -ro kie-server --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u dmController -p dmController1! -ro kie-server,rest-all --silent
 if [ $? -ne 0 ]; then
   echo
   echo Error occurred during user adding !
