@@ -9,7 +9,7 @@ Below the list of installation packages to download from the [Red Hat Customer P
 
 ## RHDM 7.5 packages
 
-- Red Hat Decision Manager 7.5.0 Decision Central Deployable for EAP 7
-  (rhdm-7.5.0-decision-central-eap7-deployable.zip)
-- Red Hat Decision Manager 7.5.0 Decision Server for All Supported EE8 Containers
-  (rhdm-7.5.0-kie-server-ee8.zip)
+- Red Hat Decision Manager 7.5.1 Decision Central Deployable for EAP 7
+  (rhdm-7.5.1-decision-central-eap7-deployable.zip)
+- Red Hat Decision Manager 7.5.1 Decision Server for All Supported EE8 Containers
+  (rhdm-7.5.1-kie-server-ee8.zip)

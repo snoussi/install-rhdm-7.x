@@ -1,9 +1,9 @@
 #!/bin/sh
 
-PRODUCT="Red Hat Decision Manager 7.5.0 on EAP 7.2"
+PRODUCT="Red Hat Decision Manager 7.5.1 on EAP 7.2"
 
-RHDM_DC=rhdm-7.5.0-decision-central-eap7-deployable
-RHDM_DS=rhdm-7.5.0-kie-server-ee8
+RHDM_DC=rhdm-7.5.1-decision-central-eap7-deployable
+RHDM_DS=rhdm-7.5.1-kie-server-ee8
 #RHDM_PATCH_WILDCARD=
 
 EAP=jboss-eap-7.2.0
