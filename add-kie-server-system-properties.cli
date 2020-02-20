@@ -3,7 +3,7 @@
 #
 
 /system-property=org.kie.server.controller.user:add(value="dmController")
-/system-property=org.kie.server.controller.pwd:add(value="dmController1!")
+/system-property=org.kie.server.controller.pwd:add(value="dmController")
 /system-property=org.kie.server.location:add(value="http://localhost:8080/kie-server/services/rest/server")
 
 /system-property=org.kie.server.controller:add(value="ws://localhost:8080/decision-central/websocket/controller")

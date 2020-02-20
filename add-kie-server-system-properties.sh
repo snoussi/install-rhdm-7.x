@@ -4,12 +4,12 @@ AUTHORS1="Rachid Snoussi"
 echo "Start Server first by running this command: ./standalone.sh -c standalone-full.xml --admin-only"
 
 TARGET=../
-JBOSS_HOME=$TARGET/rhdm-7.5
+JBOSS_HOME=$TARGET/rhdm-7.6
 CLI_SCRIPT=add-kie-server-system-properties.cli
 
 echo "Adding a dmController user on JBoss EAP ..."
 echo
-$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u dmController -p dmController1! -ro kie-server,rest-all --silent
+$JBOSS_HOME/bin/add-user.sh -a -r ApplicationRealm -u dmController -p dmController -ro kie-server,rest-all --silent
 if [ $? -ne 0 ]; then
   echo
   echo Error occurred during user adding !

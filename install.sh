@@ -1,25 +1,25 @@
 #!/bin/sh
 
-PRODUCT="Red Hat Decision Manager 7.5.1 on EAP 7.2"
+PRODUCT="Red Hat Decision Manager 7.6.0 on EAP 7.2"
 
-RHDM_DC=rhdm-7.5.1-decision-central-eap7-deployable
-RHDM_DS=rhdm-7.5.1-kie-server-ee8
+RHDM_DC=rhdm-7.6.0-decision-central-eap7-deployable
+RHDM_DS=rhdm-7.6.0-kie-server-ee8
 #RHDM_PATCH_WILDCARD=
 
 EAP=jboss-eap-7.2.0
 #EAP_PATCH=jboss-eap-7.1.4-patch
 
 EAP_USER=admin
-EAP_PWD=jboss1!
+EAP_PWD=jboss
 
 RHDM_USER=dmAdmin
-RHDM_PWD=dmAdmin1!
+RHDM_PWD=dmAdmin
 
 TARGET=../
 SRC_DIR=./installs
 
 JBOSS_HOME=$TARGET/jboss-eap-7.2
-RHDM_HOME=$TARGET/rhdm-7.5
+RHDM_HOME=$TARGET/rhdm-7.6
 
 echo
 echo "##############################################################"
