@@ -5,13 +5,7 @@
 #
 # For Decision Central only
 #
-/system-property=org.uberfire.nio.git.dir:add(value="./dm-data/git-dir")
-/system-property=org.uberfire.nio.git.daemon.host:add(value="0.0.0.0")
-/system-property=org.uberfire.nio.git.ssh.host:add(value="0.0.0.0")
-/system-property=org.uberfire.metadata.index.dir:add(value="./dm-data")
-/system-property=org.kie.override.deploy.enabled:add(value="true")
-/system-property=org.kie.server.repo:add(value="./dm-data")
-/system-property=org.guvnor.m2repo.dir:add(value="./dm-data/m2repo")
+
 
 #
 # For both Decision Central and Decision Server
@@ -20,3 +14,10 @@
 # TODO: Change path to the custom location of settings.xml file
 #
 #/system-property=kie.maven.settings.custom:add(value="/home/USERX/.m2/settings.xml")
+
+# Update JVM setting in /bin/standalone.config 
+# Alternatively, you can use the following tool: https://access.redhat.com/labs/jvmconfig/
+
+# JAVA_OPTS="-Xms2G -Xmx2G -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=1024m -Djava.net.preferIPv4Stack=true"
+# JAVA_OPTS="$JAVA_OPTS -Djboss.modules.system.pkgs=$JBOSS_MODULES_SYSTEM_PKGS -Djava.awt.headless=true"
+# JAVA_OPTS="$JAVA_OPTS -server -XX:+UseParallelGC -XX:+UseParallelOldGC"
